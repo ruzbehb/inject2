@@ -11,7 +11,7 @@ class Array
 	def inject3
 		status = true
 		self.each do |word|
-			status = status and yield word
+			status = (status and yield word)
 		end
 	status
 	end

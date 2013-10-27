@@ -13,6 +13,10 @@ describe 'inject' do
 	end	
 	
 	it 'correctly checks for the length of strings in an array' do
-		expect(['Enrique','Rob','Evgeny'].inject3 {|word| word.length < 2}).to eq true
+		expect(['Enrique','Rob','Evgeny'].inject3 {|word| word.length < 2}).to eq false
+	end
+
+	it 'correctly checks for the length of strings in an array' do
+		expect(['Enrique','Rob','Evgeny'].inject3 {|word| word.length > 2}).to eq true
 	end
 end
