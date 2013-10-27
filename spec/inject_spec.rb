@@ -9,7 +9,7 @@ describe 'inject' do
 	end
 
 	it 'multiplies all the numbers when required' do
-		expect([1,2,3].inject2 {|memo, num| memo + num}).to eq 6
+		expect([1,2,3].inject2 {|memo, num| memo * num}).to eq 6
 	end	
 	
 	it 'correctly checks for the length of strings in an array' do
